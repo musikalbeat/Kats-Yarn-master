@@ -21,8 +21,10 @@ public class TriggerCutsceneZone : MonoBehaviour {
 
 	public void NextScene(){
 		if (!(triggered = Statics.TryLoadNextScene())){
+			Debug.Log("HERE MEANS ITS LAST SCENE");
 			return;	//if false, this is the last scene
 		}
+		Debug.Log("HERE MEANS ITS NOT LAST SCENE");
 	}
 
 	public void EnableTriggerArea(){
